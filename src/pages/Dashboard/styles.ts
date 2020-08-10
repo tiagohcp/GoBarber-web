@@ -68,6 +68,10 @@ export const Profile = styled.div`
       opacity: 0.8;
     }
   }
+
+  @media (max-width: 1120px) {
+    margin-left: 0;
+  }
 `;
 
 export const Content = styled.main`
