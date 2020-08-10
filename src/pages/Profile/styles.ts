@@ -21,6 +21,21 @@ export const Container = styled.div`
       }
     }
   }
+  @media (max-width: 1120px) {
+    width: 100vw;
+    height: 100vh;
+    > header {
+      height: 100px;
+
+      div {
+        max-width: 560px;
+
+        svg {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -81,6 +96,11 @@ export const Content = styled.div`
       color: ${shade(0.2, '#ff9000')};
     }
   }
+
+  @media (max-width: 1120px) {
+    width: 100vw;
+    margin: -160px auto 0;
+  }
 `;
 
 export const AvatarInput = styled.div`
@@ -122,6 +142,13 @@ export const AvatarInput = styled.div`
 
     &:hover {
       background: ${shade(0.2, '#ff9000')};
+    }
+  }
+
+  @media (max-width: 1120px) {
+    img {
+      width: 156px;
+      height: 156px;
     }
   }
 `;

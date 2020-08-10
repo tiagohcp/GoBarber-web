@@ -29,6 +29,13 @@ export const HeaderContent = styled.div`
       height: 20px;
     }
   }
+
+  @media (max-width: 1120px) {
+    justify-content: space-around;
+    button {
+      margin-left: 0;
+    }
+  }
 `;
 
 export const Profile = styled.div`
@@ -67,6 +74,15 @@ export const Content = styled.main`
   max-width: 1120px;
   margin: 64px auto;
   display: flex;
+
+  @media (max-width: 1120px) {
+    width: 100vw;
+    height: 100vh;
+    max-height: 800px;
+    align-items: center;
+
+    flex-direction: column;
+  }
 `;
 
 export const Schedule = styled.div`
@@ -96,6 +112,10 @@ export const Schedule = styled.div`
       background: #ff9000;
       margin: 0 8px;
     }
+  }
+
+  @media (max-width: 1120px) {
+    margin-right: 0;
   }
 `;
 
@@ -261,5 +281,8 @@ export const Calendar = styled.aside`
     background: #ff9000 !important;
     border-radius: 10px;
     color: #232129 !important;
+  }
+
+  @media (max-width: 1120px) {
   }
 `;
